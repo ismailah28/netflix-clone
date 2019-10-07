@@ -301,6 +301,10 @@ img {
   text-transform: uppercase;
 }
 
+.btn-icon {
+  margin-left: 1rem;
+}
+
 /* Media Queries */
 @media (max-width: 960px) {
   .showcase {
@@ -350,6 +354,16 @@ img {
   .showcase::after {
     box-shadow: inset 80px 80px 250px #000000, inset -80px -80px 250px #000000;
   }
+  .showcase-top img {
+    width: 120px;
+  }
+
+  .showcase-top a {
+    position: absolute;
+    top: 30%;
+    right: 5;
+    transform: translate(0);
+  }
 
   .showcase-content h1 {
     font-size: 2.5rem;
@@ -358,6 +372,11 @@ img {
 
   .showcase-content p {
     font-size: 1rem;
+  }
+
+  .container {
+    max-width: 90%;
+    overflow: scroll;
   }
 
   #tab-1-content .tab-1-content-inner {
